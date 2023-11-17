@@ -19,7 +19,8 @@ fn main() {
 
             if let Ok(ip) = line {
                 let ip_copy = ip.clone();
-                let split = ip_copy.split(",");
+                //                 aqui abajo modificar el tipo de split
+                let split = ip_copy.split("::");
                 //cuenta la columna, como si fuera un arreglo
                 let mut contador_columnas:u32 = 0;
                 for s in split {
